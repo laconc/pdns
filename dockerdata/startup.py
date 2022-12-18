@@ -19,7 +19,6 @@ if product == 'pdns_recursor':
 api-key={{ apikey }}
 webserver-address=0.0.0.0
 webserver-allow-from=0.0.0.0/0
-webserver-password={{ apikey }}
     """
     templatedestination = '/etc/powerdns/recursor.d'
 elif product == 'pdns_server':
@@ -30,7 +29,6 @@ api
 api-key={{ apikey }}
 webserver-address=0.0.0.0
 webserver-allow-from=0.0.0.0/0
-webserver-password={{ apikey }}
     """
     templatedestination = '/etc/powerdns/pdns.d'
 elif product == 'dnsdist':
